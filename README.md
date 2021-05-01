@@ -27,7 +27,7 @@ Shopping list:
 - 3d printed case (see STL files)
 - Tools
   - A 3d Printer
-  - A soldering iron (with fine tip and 2 MM tip)
+  - A soldering iron (with fine tip for soldering and 2mm tip for heat inserts)
   - A computer
   - A USB to mini USB cable
   - A 2.5mm allen wrench
