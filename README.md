@@ -24,7 +24,7 @@ Shopping list:
 - m3 bolts: https://www.amazon.com/gp/product/B07H17DQDG/
 - heat inserts: https://www.amazon.com/gp/product/B07HKW7LKH/
 - Wrist Strap: https://www.amazon.com/gp/product/B0832CKB59/
-- 3d printed case (see STL folder)
+- 3d printed case (see STL files)
 - Tools
   - A 3d Printer
   - A soldering iron (with fine tip and 2 MM tip)
