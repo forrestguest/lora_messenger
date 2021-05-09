@@ -28,6 +28,8 @@ Shopping list:
 - Tools
   - A 3d Printer
   - A soldering iron (with fine tip for soldering and 2mm tip for heat inserts)
+  - Solder
+  - Hook up wire
   - A computer
   - A USB to mini USB cable
   - A 2.5mm allen wrench
@@ -55,29 +57,30 @@ I like the look of the hex bolts, you will probably have to clean up your print 
 Instructions:
 1. Download everything you'll need
     - The code.py and msg_config.json from this repository
+    - The encryption libraries from this repository (source: https://www.nayuki.io/page/cryptographic-primitives-in-plain-python)
     - The Mu code editor (https://codewith.mu/)
     - The circuitpython installer (https://circuitpython.org/board/feather_m4_express/)
     - The circuitpython libraries (https://circuitpython.org/libraries)
-    - The encryption libraries from this repository (source: https://www.nayuki.io/page/cryptographic-primitives-in-plain-python)
  2. Install Mu on your computer
- 3. Assemble the feathers by soldering on the uFL connector and all of the headers.  I put some of them on upside down in order to keep the boards as close to the screen as possible.  Don't put the case on yet.
- 4. Open Mu and plug in the USB cable
- 5. Double click the reset button to put the feather into flashing mode.  The USB drive should disappear and you should get a drive named *SOMETHING*BOOT
- 6. Copy and paste the circuitpython UF2 onto the drive.  It should reboot, and the drive name should switch back to CIRCUITPY.
- 7. Open the boot.txt and make sure the version has been updated.
- 8. Unplug everything and assemble the case, plug in the battery and antenna. I needed a pair of offset tweezers in order to seat the antenna correctly.
- 9. Generate a key.  Open IDLE or another python editor (Mu doesn't seem to have an interactive console), and enter the following commands:
+ 3. Assemble the LORA featherwing by soldering on the uFL connector and the two fly wires - CS to A3 and RST to A4, if you want to use the code without changes
+ 4. Solder on all of the headers.  I put some of the headers on upside down in order to keep the boards as close to the screen as possible.  Don't put the case on yet.
+ 5. Open Mu and plug in the USB cable
+ 6. Double click the reset button to put the feather into flashing mode.  The USB drive should disappear and you should get a drive named *SOMETHING*BOOT
+ 7. Copy and paste the circuitpython UF2 onto the drive.  It should reboot, and the drive name should switch back to CIRCUITPY.
+ 8. Open the boot.txt and make sure the version has been updated.
+ 9. Unplug everything and assemble the case, plug in the battery and antenna. I needed a pair of offset tweezers in order to seat the antenna correctly.
+ 10. Generate a key.  Open IDLE or another python editor (Mu doesn't seem to have an interactive console), and enter the following commands:
      - import random
      - '%030x' % random.randrange(16**32)
- 10. Edit the msg_config.json file and update the key with the result of the above, and set the device name to something useful.  Only 10 characters will be used.
- 11. Plug the usb back in and copy the following files into the main drive from this repository:
-    - code.py
-    - msg_config.json
- 12. Edit the 
- 13. Copy the following files into the lib directory from the encryption folder of this repository:
+ 11. Edit the msg_config.json file and update the key with the result of the above, and set the device name to something useful.  Only 10 characters will be used.
+ 12. Plug the usb back in and copy the following files into the main drive from this repository:
+     - code.py
+     - msg_config.json
+ 13. Edit the 
+ 14. Copy the following files into the lib directory from the encryption folder of this repository:
      - aescipher.py
      - cryptocommon.py
- 14. Copy the following files into the lib directory from the circuitpython library zip file:
+ 15. Copy the following files into the lib directory from the circuitpython library zip file:
      - the entire adafruit_bus_device folder
      - the entire adafruit_display_shapes folder
      - the entire adafruit_display_text folder
@@ -92,8 +95,8 @@ Instructions:
      - adafruit_stmpe610.mpy
      - bbq10keyboard.py
      - neopixel.mpy
- 15. Saving the last file should have restarted the device, and the screen should load up and drop you into a black window 
- 16. Realize you need to make at least two devices in order to chat, and repeat all of the above steps for any other devices.
+ 16. Saving the last file should have restarted the device, and the screen should load up and drop you into a black window 
+ 17. Realize you need to make at least two devices in order to chat, and repeat all of the above steps for any other devices.
 
 TODO:
 - find something for the other buttons to do
