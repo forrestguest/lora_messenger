@@ -6,7 +6,7 @@ https://msglab.co/room/lo-ra-msg
 
 Notable improvements:
 - Messages are encrypted
-- Devices have names for better scroll back
+- Devices have names for better scrollback
 - Some small bugs fixed
 - Buttons all do something (mostly just change the color of the LED)
 - I adjusted the STLs to fit the larger USB plugs I'm using
@@ -36,9 +36,9 @@ Shopping list:
   - Offset tweezers: https://www.amazon.com/dp/B006RBBE3I/
 
 More information:
-Stores: Adafruit things are available in a variety of locations, their store charges shipping but is otherwise the cheapest option for the feather and LORA featherwing.  I would also recommend buying the headers from them, and batteries from another source may have reversed polarity.  Check the battery image at Adafruit against the battery you get to make sure you don't break anything.  Tindie, Adafruit, Digikey and of course Amazon are all places to check.
+Stores: Adafruit things are available in a variety of locations, their store charges shipping but is otherwise the cheapest option for the feather and LORA featherwing.  I would also recommend buying the headers from them, as batteries from another source may have reversed polarity.  Check the battery image at Adafruit against the battery you get to make sure you don't break anything.  Tindie, Adafruit, Digikey and of course Amazon are all places to check.
 
-The blackbarry q10 keyboard featherwing is from https://www.solder.party/, made by https://twitter.com/arturo182.  
+The blackberry q10 keyboard featherwing is from https://www.solder.party/, made by https://twitter.com/arturo182.  
 Docs: https://www.solder.party/docs/keyboard-featherwing/
 Code: https://github.com/arturo182/keyboard_featherwing_sw
 
